@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seoul Museum Api</title>
+  </head>
+  <body>
+    <h2>서울시립미술관 소장품 정보</h2>
+  </body>
+  <script src="js/data.js"></script>
+  <script>
+    /* Javascript 샘플 코드 */
+
+	// var xhr = new XMLHttpRequest();
+	// var url = 'http://openapi.seoul.go.kr:8088/4f644156576b696837335374624370/json/SemaPsgudInfoKorInfo/1/5/'; /* URL */
+	// xhr.open('GET', url);
+	// xhr.onreadystatechange = function () {
+	// 	if (this.readyState == xhr.DONE) {  // <== 정상적으로 준비되었을때
+	// 	if(xhr.status == 200||xhr.status == 201){ // <== 호출 상태가 정상적일때
+	// 		alert('Status: '+this.status+
+	// 			'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+
+	// 			'\nBody: '+this.responseText);
+	// 		}
+	// 	}
+	// };
+	// xhr.send('');
+  // console.log(object);
+
+   fetch(
+        'http://openapi.seoul.go.kr:8088/4f644156576b696837335374624370/json/SemaPsgudInfoKorInfo/1/2/'
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then((data) => {
+          console.log(data); // 응답 데이터 콘솔에 출력
+        })
+        .catch((error) => {
+          console.error(
+            'There has been a problem with your fetch operation:',
+            error
+          );
+        });
+</script>
+
+</body>
+</html>
+  </script>
+</html>
