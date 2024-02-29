@@ -19,24 +19,84 @@
         </div>
       </header>
 
-    <section class="section">
+    <section class="section top">
       <h3>SeMA 소장품 정보</h3>
       <h6>서울시립미술관이 소장한 작품을 살펴 보세요.</h6>
       <img src="./image/bimg.png" alt="">
-     
+      <div class="div"></div>
+
+
+      
     </section>
+
+    <section class="section section2">
+      <h3>작품 둘러보기</h3>
+      <div class="item">
+      <div class="container box1">
+        <h4>작품명</h4>
+        <h5>작가명</h5>
+        <h6>제작년도</h6>
+      </div>
+      <div class="container box2">
+        <h4>작품명</h4>
+        <h5>작가명</h5>
+        <h6>제작년도</h6>
+      </div>
+      <div class="container box3">
+        <h4>작품명</h4>
+        <h5>작가명</h5>
+        <h6>제작년도</h6></div>
+      <div class="container box4">
+        <h4>작품명</h4>
+        <h5>작가명</h5>
+        <h6>제작년도</h6></div>
+      </div>
+      </section>
+
+    <section class="section section3">
+      <h3>작품 검색하기</h3>
+      <form action="/search" method="GET">
+        <input type="text" name="q" placeholder="검색어를 입력하세요">
+        <button type="submit">검색</button>
+      </form>
+      </section>
+    
+
+    <section class="section section4">
+      <h3>소장품 하이라이트</h3>
+      <h5>서울시립미술관의 대표 작품을 ‘소장품 하이라이트'에서 만나볼 수 있습니다.
+        개별 작품의 감상과 더불어 1985년부터 조성된 미술관의 소장품을 통해
+        서울시립미술관의 과거와 현재. 미래를 조망해 볼 수 있습니다.</h5>
+        <div class="item2">
+          <div class="box5"></div>
+          <div class="text">
+          <h4>작품명</h4>
+          <h5>작가명</h5>
+         <h6>제작년도</h6>
+          <h6>재료</h6>
+        </div>
+      </div>
+</section>
+
+   
     <footer>
-      <h2>푸터입니다.</h2>
+      <h5>서울 중구 덕수궁길 61</h5>
+      <h5>02-2124-8800</h5>
+      <h6>개인정보처리방침</h6>
+      <h6>접근성 안내</h6>
+      <h6>이메일무단수집거부</h6>
+      <h6>함께한 사람들</h6>
     </footer>
+  </div>
   </div>
   </body>
 
   <script>
     const headerHeight = document.querySelector('header').offsetHeight;
-    const section = document.querySelector('section');
+    const section = document.querySelector('section.top');
 
-    section.style.height = `calc(100vh - ${headerHeight - 50}px)`;
-    section.style.marginTop = `${headerHeight + 50}px`;
+    section.style.height = `calc('auto' - ${headerHeight}px)`;
+    section.style.marginTop = `${headerHeight}px`;
   </script>
 
   <script src="js/data.js"></script>

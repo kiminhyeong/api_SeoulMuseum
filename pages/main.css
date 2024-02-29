@@ -17,7 +17,106 @@
 }
 
 .section > img {
-  /* position: fixed; */
-
   z-index: -1;
+}
+
+/* section2 작품 둘러보기 */
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 h3 {
+  margin-bottom: 20px;
+  color: #111;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container {
+  width: 156px;
+  height: 210px;
+  background: #eee;
+  margin-bottom: 86px;
+}
+
+.container h4,
+.container h5,
+.container h6 {
+  margin-bottom: 10px;
+}
+
+/* section3 작품 검색하기 */
+
+.section3 h3 {
+  color: #111;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section3 form {
+  display: flex;
+  column-gap: 0.625rem;
+}
+
+.section3 input {
+  display: flex;
+  width: 247px;
+  padding: 6px 10px;
+  align-items: center;
+  gap: 10px;
+  border: 0.6px solid #ddd;
+}
+
+.section3 button {
+  display: flex;
+  width: 65px;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0.6px solid #111;
+  background: #fff;
+}
+
+/* section 4 소장품 하이라이트 */
+
+.section4 h3 {
+  color: #111;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section4 h5 {
+  color: #333;
+  font-family: 'Noto Sans';
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.item2 {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.box5 {
+  width: 156px;
+  height: 210px;
+  background: #111;
+}
+
+.text {
+  flex-direction: column;
 }
